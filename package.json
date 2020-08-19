@@ -8,11 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "framer-motion": "^2.5.1",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-animated-burgers": "^1.2.8",
     "react-dom": "16.13.1",
+    "react-items-carousel": "^2.8.0",
+    "react-scroll": "^1.8.1",
     "styled-components": "^5.1.1",
     "tailwindcss": "^1.5.2",
     "tailwindcss-filters": "^3.0.0"

@@ -1,15 +1,17 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import Link from 'next/link'
+import React, { useState, useEffect, useCallback } from "react"
+import PropTypes from "prop-types"
+import Link from "next/link"
+import { Link as Anchor, animateScroll as scroll } from "react-scroll"
 
-import { HamburgerSqueeze } from 'react-animated-burgers'
+import { HamburgerSqueeze } from "react-animated-burgers"
 
 const Navbar = ({ links }) => {
   const [width, updateWidth] = useState(null)
   useEffect(() => {
     updateWidth(window.innerWidth)
-    window.addEventListener('resize', () => updateWidth(window.innerWidth))
+    window.addEventListener("resize", () => updateWidth(window.innerWidth))
 
-    return window.removeEventListener('resize', () =>
+    return window.removeEventListener("resize", () =>
       updateWidth(window.innerWidth)
     )
   })
@@ -22,10 +24,10 @@ const Navbar = ({ links }) => {
         setScroll(isScrolled)
       }
     }
-    document.addEventListener('scroll', onScroll)
+    document.addEventListener("scroll", onScroll)
 
     return () => {
-      document.removeEventListener('scroll', onScroll)
+      document.removeEventListener("scroll", onScroll)
     }
   }, [scroll])
   const [isActive, setIsActive] = useState(false)
@@ -39,11 +41,11 @@ const Navbar = ({ links }) => {
     <div
       className={
         scroll
-          ? 'w-full bg-none fixed z-20 top-0 transition-all duration-200 ease-in border-b border-transparent'
-          : 'w-full bg-blur fixed z-20 top-0 transition-all duration-200 ease-in border-b border-gray-200'
+          ? "w-full bg-white md:bg-transparent fixed z-20 py-6 md:py-8 top-0 transition-all duration-200 ease-in border-b border-transparent"
+          : "w-full bg-blur fixed z-20 py-3 md:py-4 top-0 transition-all duration-200 ease-in border-b border-navbar-border"
       }
     >
-      <div className="max-w-7xl px-4 py-2 md:flex items-center justify-between w-full mx-auto">
+      <div className="max-w-7xl px-6 md:flex items-center justify-between w-full mx-auto">
         <div className="md:flex items-center">
           <div className="flex items-center justify-between">
             <Link href="/">
@@ -55,20 +57,13 @@ const Navbar = ({ links }) => {
                 />
               </a>
             </Link>
-            {width < 768 &&
-              (scroll ? (
-                <HamburgerSqueeze
-                  barColor="black"
-                  buttonWidth={30}
-                  {...{ isActive, toggleButton }}
-                />
-              ) : (
-                <HamburgerSqueeze
-                  barColor="white"
-                  buttonWidth={30}
-                  {...{ isActive, toggleButton }}
-                />
-              ))}
+            {width < 768 && (
+              <HamburgerSqueeze
+                barColor="black"
+                buttonWidth={30}
+                {...{ isActive, toggleButton }}
+              />
+            )}
           </div>
           {(width > 768 || isActive) && (
             <ul className="list-inside md:flex items-center py-5 md:py-0 md:pl-5">
@@ -78,13 +73,18 @@ const Navbar = ({ links }) => {
                     key={link}
                     className={
                       scroll
-                        ? 'text-gray-500 py-1 md:py-0 lg:p-2 mr-4'
-                        : 'text-gray-800 py-1 md:py-0 lg:p-2 mr-4'
+                        ? "cursor-pointer text-paragraph hover:text-primary ease-in duration-100 transition-colors py-1 md:py-0 lg:p-2 mr-4"
+                        : "cursor-pointer text-paragraph hover:text-primary ease-in duration-100 transition-colors py-1 md:py-0 lg:p-2 mr-4"
                     }
                   >
-                    <Link href={`/${link.toLowerCase()}`}>
-                      <a>{link}</a>
-                    </Link>
+                    <Anchor
+                      to={`${link.toLowerCase()}`}
+                      smooth={true}
+                      offset={-100}
+                      spy={true}
+                    >
+                      {link}
+                    </Anchor>
                   </li>
                 )
               })}
@@ -92,13 +92,17 @@ const Navbar = ({ links }) => {
           )}
         </div>
         {(width > 768 || isActive) && (
-          <button className="bg-orange-500 text-white rounded-md px-3 py-2">
+          <button className="bg-secondary text-white bg-darken ease-in duration-100 rounded-md px-3 py-2">
             Join the Club
           </button>
         )}
       </div>
     </div>
   )
+}
+
+Navbar.propTypes = {
+  links: PropTypes.array.isRequired,
 }
 
 export default Navbar
