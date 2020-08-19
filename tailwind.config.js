@@ -1,5 +1,6 @@
 module.exports = {
-  purge: ["./src/pages/**/*.jsx", "./src/components/**/*.jsx"],
+  //"./src/pages/**/*.jsx", "./src/components/**/*.jsx"
+  purge: ["./src/components/**/*.jsx", "./src/pages/**/*.jsx"],
   theme: {
     filter: {
       none: "none",
