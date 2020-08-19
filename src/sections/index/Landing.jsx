@@ -18,10 +18,15 @@ const Landing = () => {
             activities.
           </p>
           <div className="flex items-center">
-            <ButtonLink text="Join the Club" link="join" color="bg-primary" />
+            <ButtonLink
+              text="Join the Club"
+              link="join"
+              type="link"
+              color="bg-primary"
+            />
             <TextLink
               text="Become a Sponsor"
-              link="sponsor"
+              link="sponsorships"
               color="text-primary"
             />
           </div>

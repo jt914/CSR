@@ -8,18 +8,18 @@ const FooterLinks = ({ linkarray, type }) => {
         <ul>
           <li className="text-footer-text pb-2 text-base">
             <a
-              href="#"
+              href="https://www.firstinspires.org/robotics/frc"
               className="hover:text-tertiary ease-in duration-100 transition-colors"
             >
-              CyberPatriot
+              FIRST Robotics Competition
             </a>
           </li>
           <li className="text-footer-text pb-2 text-base">
             <a
-              href="#"
+              href="https://www.uscyberpatriot.org/"
               className="hover:text-tertiary ease-in duration-100 transition-colors"
             >
-              FIRST Robotics Competition
+              CyberPatriot
             </a>
           </li>
         </ul>

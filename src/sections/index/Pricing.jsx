@@ -1,12 +1,23 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 import Header from "../../components/index/pricing/Card/Header"
 import Card from "../../components/index/pricing/Card/Card"
 import Button from "../../components/index/pricing/Card/Button"
+import Modal from "../../components/global/modal/Modal"
 
 const Pricing = () => {
+  const [isOpen, openDonate] = useState(false)
+  const handleClose = () => {
+    openDonate(!isOpen)
+  }
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto")
+    return
+  })
   return (
-    <div>
+    <div className="relative">
       <div className="bg-pricing-bg relative">
         <div
           id="sponsorships"
@@ -20,8 +31,8 @@ const Pricing = () => {
               Support the Organization
             </h1>
             <p className="text-pricing-paragraph text-base max-w-lg mx-auto leading-relaxed pt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              et molestie odio, finibus maximus arcu.
+              Consider donating to help support our mission to provide STEM
+              opportunities to all students at Woodson.
             </p>
           </div>
           <div className="grid md:grid-cols-3 grid-flow-row md:grid-flow-col gap-4 lg:gap-8">
@@ -37,7 +48,7 @@ const Pricing = () => {
                   ]}
                 />
                 <div className="p-6 mt-auto w-full">
-                  <Button price="500" />
+                  <Button onclick={handleClose} price="500" />
                 </div>
               </div>
             </div>
@@ -55,7 +66,7 @@ const Pricing = () => {
                 />
 
                 <div className="p-6 mt-auto w-full">
-                  <Button price="2,500" />
+                  <Button onclick={handleClose} price="2,500" />
                 </div>
               </div>
             </div>
@@ -72,7 +83,7 @@ const Pricing = () => {
                   ]}
                 />
                 <div className="p-6 mt-auto w-full">
-                  <Button price="5,000" />
+                  <Button onclick={handleClose} price="5,000" />
                 </div>
               </div>
             </div>
@@ -82,7 +93,17 @@ const Pricing = () => {
           className="hidden xl:block xl:absolute left-0 bottom-0 ml-16 mb-20 z-0"
           src="./assets/img/shapes/pricingleft.svg"
         />
+        <img
+          className="hidden xl:block xl:absolute right-0 top-0 mr-20 mt-5 z-0"
+          src="./assets/img/shapes/pricingright.svg"
+        />
       </div>
+      <Modal
+        onclick={handleClose}
+        isOpen={isOpen}
+        title="Make a Donation"
+        type="pricing"
+      />
     </div>
   )
 }

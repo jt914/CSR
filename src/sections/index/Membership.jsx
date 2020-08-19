@@ -14,9 +14,14 @@ const Membership = () => {
           className="max-w-7xl mx-auto px-6 pt-24 pb-12 md:pb-24 md:grid md:grid-cols-2"
         >
           <div
-            className="flex-1 bg-cover bg-center h-64 md:h-auto"
+            className="flex-1 bg-cover bg-center h-64 md:h-auto relative"
             style={imgPath}
-          ></div>
+          >
+            <img
+              className="absolute left-0 bottom-0 ml-8 -mb-2 z-0"
+              src="./assets/img/shapes/memberzigzag.svg"
+            />
+          </div>
           <div className="flex items-center p-6 py-16 md:p-8 md:py-16">
             <Card
               category="Memberships"

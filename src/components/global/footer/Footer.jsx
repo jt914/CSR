@@ -17,7 +17,7 @@ const Footer = () => {
                   Providing students with hands-on STEM opportunities.
                 </p>
                 <div className="flex items-center pt-2">
-                  <a href="#" className="mr-6">
+                  <a href="mailto:contact@wtw.dev" className="mr-6">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -34,7 +34,7 @@ const Footer = () => {
                       <polyline points="22,6 12,13 2,6"></polyline>
                     </svg>
                   </a>
-                  <a href="#" className="mr-6">
+                  <a href="https://twitter.com/WTWCSR" className="mr-6">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"

@@ -6,7 +6,7 @@ import Card from "../../components/index/about/Card"
 function About() {
   return (
     <div>
-      <div className="min-h-screen bg-about-bg pb-24 relative">
+      <div className="bg-about-bg pb-24 relative">
         <Sponsors />
         <div className="mx-auto max-w-7xl px-4 pt-40 pb-24 text-center">
           <h2

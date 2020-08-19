@@ -53,7 +53,7 @@ export default function Home() {
       <AnimatePresence>
         {scrolled && (
           <motion.button
-            className="fixed z-50 bottom-0 right-0 m-5 md:m-10 p-3 bg-secondary shadow-lg rounded"
+            className="fixed z-40 bottom-0 right-0 m-5 md:m-10 p-3 bg-secondary shadow-lg rounded bg-darken ease-in duration-100"
             onClick={scrollToTop}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
