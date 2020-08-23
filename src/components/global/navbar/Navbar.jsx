@@ -92,9 +92,11 @@ const Navbar = ({ links }) => {
           )}
         </div>
         {(width > 768 || isActive) && (
-          <button className="bg-secondary text-white bg-darken ease-in duration-100 rounded-md px-3 py-2">
-            Join the Club
-          </button>
+          <Link href="/join">
+            <button className="bg-secondary text-white bg-darken ease-in duration-100 rounded-md px-3 py-2">
+              Join the Club
+            </button>
+          </Link>
         )}
       </div>
     </div>
