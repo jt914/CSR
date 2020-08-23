@@ -193,13 +193,13 @@ const Subscribe = () => {
         </div>
         <div className="col-span-2 md:col-span-1">
           <label htmlFor="tshirt-input">{"T-Shirt Size"}</label>
-          <div className="relative">
+          <div className="relative select-none">
             <div
               id="tshirt-input"
               name="tshirt"
               onClick={() => toggleDropdown(!isOpen)}
               value={getValues("tshirt")}
-              className=" w-full p-3 rounded-lg border border-gray-300 flex mt-3 items-center justify-between"
+              className="w-full p-3 rounded-lg border border-gray-300 flex mt-3 items-center justify-between"
             >
               {size}
               <svg

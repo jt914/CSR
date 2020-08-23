@@ -27,7 +27,7 @@ const Membership = () => {
               category="Memberships"
               title="Become a Member"
               description="Registration is open to all members at W.T. Woodson Highschool and is available throughout the year. To join, fill out the application below and submit it. If you have any inquiries, please email FRC@wtw.dev"
-              button="Open Application"
+              button="Register Now"
             />
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import React, { useState, useEffect } from "react"
 
 import Subscribe from "../../components/signup/Subscribe"
@@ -9,7 +10,9 @@ export default function Join() {
     <div className="flex min-h-screen">
       <div className="w-full lg:w-3/5 xl:w-2/5 bg-white max-w-5xl mx-auto px-6 md:px-20 my-10 relative">
         {/* <Subscribe /> */}
-        <img src="./assets/img/logo.svg" className="w-20" />
+        <Link href="/">
+          <img src="./assets/img/logo.png" className="w-16 cursor-pointer" />
+        </Link>
         <div className="py-6 md:py-10">
           <h1 className="font-medium text-3xl text-black">Become a Member</h1>
           <p className="text-paragraph text-base">
