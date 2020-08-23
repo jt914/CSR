@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Start purging */
+@tailwind utilities;
+/* Stop purging */
 
 .bg-blur {
   background: rgba(255, 255, 255, 0.75);
