@@ -8,6 +8,7 @@ import md5 from "md5"
 
 import Error from "./Error"
 import Success from "./Success"
+import FieldError from "./FieldError"
 
 const Subscribe = () => {
   const phoneRegEx = /^\(\d{3}\)\s\d{3}-\d{4}/
@@ -149,7 +150,7 @@ const Subscribe = () => {
             type="text"
             className="block w-full p-3 rounded-lg border border-gray-300 mt-3"
           />
-          {errors.fname && <Error message={errors.fname.message} />}
+          {errors.fname && <FieldError message={errors.fname.message} />}
         </div>
         <div>
           <label htmlFor="lname-input">{"Last Name"}</label>
@@ -161,7 +162,7 @@ const Subscribe = () => {
             type="text"
             className="block w-full p-3 rounded-lg border border-gray-300 mt-3"
           />
-          {errors.lname && <Error message={errors.lname.message} />}
+          {errors.lname && <FieldError message={errors.lname.message} />}
         </div>
         <div className="col-span-2">
           <label htmlFor="email-input">{"Email Address"}</label>
@@ -174,7 +175,7 @@ const Subscribe = () => {
             type="email"
             className="block w-full p-3 rounded-lg border border-gray-300 mt-3"
           />
-          {errors.email && <Error message={errors.email.message} />}
+          {errors.email && <FieldError message={errors.email.message} />}
         </div>
         <div className="col-span-2 md:col-span-1">
           <label htmlFor="phone-input">{"Phone Number"}</label>
@@ -186,7 +187,7 @@ const Subscribe = () => {
             type="text"
             className="block w-full p-3 rounded-lg border border-gray-300 mt-3"
           />
-          {errors.phone && <Error message={errors.phone.message} />}
+          {errors.phone && <FieldError message={errors.phone.message} />}
         </div>
         <div className="col-span-2 md:col-span-1">
           <label htmlFor="tshirt-input">{"T-Shirt Size"}</label>
@@ -243,7 +244,7 @@ const Subscribe = () => {
               </motion.div>
             )}
           </div>
-          {errors.tshirt && <Error message={errors.tshirt.message} />}
+          {errors.tshirt && <FieldError message={errors.tshirt.message} />}
         </div>
         <div>
           <p id="radioGroup" className="pb-3">
@@ -323,7 +324,7 @@ const Subscribe = () => {
               <span className="pl-2">No</span>
             </label>
           </div>
-          {errors.member && <Error message={errors.member.message} />}
+          {errors.member && <FieldError message={errors.member.message} />}
         </div>
         <button
           type="submit"
