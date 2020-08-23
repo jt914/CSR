@@ -32,8 +32,34 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <Head>
-        <title>W.T. Woodson CyberSecurity and Robotics</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>W.T. Woodson Cybersecurity and Robotics</title>
+        <meta name="title" content="W.T. Woodson Cybersecurity and Robotics" />
+        <meta
+          name="description"
+          content="Our Cybersecurity and Robotics program provide students with unique STEM opportunities and experience to educate and help students explore the different fields of STEM through competitions and other activities."
+        />
+
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#603cba" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Navbar links={["Programs", "Sponsorships", "Memberships", "Contact"]} />
       <Landing />
