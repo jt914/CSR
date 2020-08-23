@@ -7,9 +7,10 @@ import { motion, AnimatePresence } from "framer-motion"
 import md5 from "md5"
 
 import Error from "./Error"
+import Success from "./Success"
 
 const Subscribe = () => {
-  const phoneRegEx = /^\d{3}?[\s]\d{3}[-]\d{4}$/
+  const phoneRegEx = /^\(\d{3}\)\s\d{3}-\d{4}/
   const schema = yup.object().shape({
     fname: yup
       .string()
@@ -127,13 +128,9 @@ const Subscribe = () => {
     <div>
       {message ? (
         error ? (
-          <div className="border border-red-300 bg-red-100 text-red-700 p-3 w-full rounded-lg">
-            {message}
-          </div>
+          <Error message={message} />
         ) : (
-          <div className="border border-green-300 bg-green-100 text-green-700 p-3 w-full rounded-lg">
-            {message}
-          </div>
+          <Success message={message} />
         )
       ) : (
         ""
