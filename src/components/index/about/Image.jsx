@@ -6,7 +6,7 @@ function Image({ image }) {
       <img
         alt="cp"
         className="w-full"
-        src={`./assets/img/cards/${image}.jpg`}
+        src={require(`../../../../public/assets/img/cards/${image}.webp`)}
       />
     </div>
   )

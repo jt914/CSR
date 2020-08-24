@@ -22,9 +22,6 @@ function About() {
             Students work together in teams across various competitions, learn
             from trained mentors, and experience STEM at a level that will
             prepare them for their future careers.
-            {/* From prototyping and modeling
-            to coding and cybersecurity, students will experience engineering
-            and computer science at a rich level. */}
           </p>
         </div>
         <Card

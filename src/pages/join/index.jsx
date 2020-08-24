@@ -1,11 +1,11 @@
 import Head from "next/head"
 import Link from "next/link"
-import React, { useState, useEffect } from "react"
+import React from "react"
 
 import Subscribe from "../../components/signup/Subscribe"
 
 export default function Join() {
-  const divPath = { backgroundImage: `url('./assets/img/join/img.jpg')` }
+  // const divPath = { backgroundImage: `url('./assets/img/join/img.webp')` }
   return (
     <div className="flex min-h-screen">
       <Head>
@@ -39,7 +39,6 @@ export default function Join() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <div className="w-full lg:w-3/5 xl:w-2/5 bg-white max-w-5xl mx-auto px-6 md:px-20 my-10 relative">
-        {/* <Subscribe /> */}
         <Link href="/">
           <img src="./assets/img/logo.png" className="w-16 cursor-pointer" />
         </Link>
@@ -58,7 +57,11 @@ export default function Join() {
       </div>
       <div
         className="hidden lg:block lg:w-2/5 xl:w-3/5 bg-cover bg-center"
-        style={divPath}
+        style={{
+          backgroundImage: `url(
+            ${require("../../../public/assets/img/join/img.webp")}
+          )`,
+        }}
       />
     </div>
   )

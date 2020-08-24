@@ -3,9 +3,9 @@ import React from "react"
 import Card from "../../components/index/membership/Card"
 
 const Membership = () => {
-  const imgPath = {
-    backgroundImage: `url('/assets/img/membership/membership.jpg')`,
-  }
+  // const imgPath = {
+  //   backgroundImage: `url(require'/assets/img/membership/membership.jpg')`,
+  // }
   return (
     <div>
       <div className="bg-white relative">
@@ -15,7 +15,11 @@ const Membership = () => {
         >
           <div
             className="flex-1 bg-cover bg-center h-64 md:h-auto relative"
-            style={imgPath}
+            style={{
+              backgroundImage: `url(
+                ${require("../../../public/assets/img/membership/membership.webp")}
+              )`,
+            }}
           >
             <img
               className="absolute left-0 bottom-0 ml-8 -mb-2 z-0"
@@ -33,7 +37,7 @@ const Membership = () => {
         </div>
         <img
           className="hidden xl:block xl:absolute right-0 bottom-0 mr-16 mb-16 z-0"
-          src="./assets/img/shapes/membershipzigzag.svg"
+          src={require("../../../public/assets/img/shapes/membershipzigzag.svg")}
         />
       </div>
     </div>

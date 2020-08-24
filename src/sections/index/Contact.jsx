@@ -3,9 +3,9 @@ import React from "react"
 import Card from "../../components/index/contact/Card"
 
 const Membership = () => {
-  const imgPath = {
-    backgroundImage: `url('/assets/img/contact/woodson.jpg')`,
-  }
+  // const imgPath = {
+  //   backgroundImage: `url('/assets/img/contact/woodson.webp')`,
+  // }
   return (
     <div>
       <div className="bg-about-bg">
@@ -16,7 +16,12 @@ const Membership = () => {
           <div className="flex items-center p-6 md:p-8 bg-white">
             <Card category="Contact" title="Get in Touch" />
           </div>
-          <div className="flex-1 bg-cover bg-center relative" style={imgPath}>
+          <div
+            className="flex-1 bg-cover bg-center relative"
+            style={{
+              backgroundImage: `url(${require("../../../public/assets/img/contact/woodson.webp")})`,
+            }}
+          >
             <img
               className="absolute right-0 top-0 -mr-4 -mt-3 z-0"
               src="./assets/img/shapes/contactwave.svg"
