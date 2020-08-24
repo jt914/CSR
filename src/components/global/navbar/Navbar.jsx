@@ -50,11 +50,15 @@ const Navbar = ({ links }) => {
           <div className="flex items-center justify-between">
             <Link href="/">
               <a>
-                <img
-                  src="/assets/img/logo.webp"
-                  className="w-16"
-                  alt="W.T. Woodson CyberSecurity and Robotics"
-                />
+                <picture className="w-16">
+                  <source srcSet="/assets/img/logo.webp" type="image/webp" />
+                  <source srcSet="/assets/img/logo.png" type="image/png" />
+                  <img
+                    src="/assets/img/logo.webp"
+                    className="w-16"
+                    alt="W.T. Woodson CyberSecurity and Robotics"
+                  />
+                </picture>
               </a>
             </Link>
             {width < 768 && (
