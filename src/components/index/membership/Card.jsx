@@ -11,7 +11,7 @@ const Card = ({ category, title, description, button }) => {
       <p className="text-paragraph max-w-3xl mx-auto leading-7 pt-5 pb-10">
         {description}
       </p>
-      <ButtonLink text={button} link="/join" color="bg-secondary" />
+      <ButtonLink text={button} link="join" type="link" color="bg-secondary" />
     </div>
   )
 }
