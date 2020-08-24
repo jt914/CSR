@@ -31,27 +31,27 @@ function Sponsors() {
         >
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/amazon.png"
+            src="./assets/img/sponsors/amazon.webp"
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/google.png"
+            src="./assets/img/sponsors/google.webp"
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/microsoft.png"
+            src="./assets/img/sponsors/microsoft.pwebpng"
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/lockheedmartin.png"
+            src="./assets/img/sponsors/lockheedmartin.webp"
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/amazon.png"
+            src="./assets/img/sponsors/amazon.webp"
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/google.png"
+            src="./assets/img/sponsors/google.webp"
           />
         </ItemsCarousel>
       </div>

@@ -6,7 +6,7 @@ import Image from "../about/Image"
 function Card(props) {
   const { direction, category, title, description, color, link, image } = props
 
-  const divPath = { backgroundImage: `url('./assets/img/cards/${image}.jpg')` }
+  const divPath = { backgroundImage: `url('./assets/img/cards/${image}.webp')` }
   return (
     <div>
       {direction === "forward" ? (
