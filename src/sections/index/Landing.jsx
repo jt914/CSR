@@ -33,7 +33,7 @@ const Landing = () => {
         </div>
         <div className="hidden md:block md:w-1/2">
           <img
-            src="./assets/img/Members.png"
+            src={require("./assets/img/Members.png?lqip-colors")}
             className="absolute top-0 right-0 w-2/5"
           />
         </div>
