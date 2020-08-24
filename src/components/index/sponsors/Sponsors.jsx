@@ -39,7 +39,7 @@ function Sponsors() {
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/microsoft.pwebpng"
+            src="./assets/img/sponsors/microsoft.webp"
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
