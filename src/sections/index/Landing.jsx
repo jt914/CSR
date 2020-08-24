@@ -32,10 +32,20 @@ const Landing = () => {
           </div>
         </div>
         <div className="hidden md:block md:w-1/2">
-          <img
-            src={require("../../../public/assets/img/Members.webp")}
-            className="absolute top-0 right-0 w-2/5"
-          />
+          <picture className="absolute top-0 right-0 w-2/5">
+            <source
+              srcSet={require("../../../public/assets/img/Members.webp")}
+              type="image/webp"
+            />
+            <source
+              srcSet={require("../../../public/assets/img/Members.png")}
+              type="image/png"
+            />
+            <img
+              src={require("../../../public/assets/img/Members.png")}
+              type="image/png"
+            />
+          </picture>
         </div>
       </div>
     </div>
