@@ -3,17 +3,23 @@ import ItemsCarousel from "react-items-carousel"
 
 function Sponsors() {
   const [activeItemIndex, setActiveItemIndex] = useState(0)
-  useEffect(() => {
-    const timer = setInterval(() => {
-      //activeItemIndex: (prevState.activeItemIndex + 1) % (noOfItems-noOfCards + 1),
-      setActiveItemIndex((activeItemIndex + 1) % 4)
-    }, 3000)
-    return () => clearInterval(timer)
-  })
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     //activeItemIndex: (prevState.activeItemIndex + 1) % (noOfItems-noOfCards + 1),
+  //     setActiveItemIndex((activeItemIndex + 1) % 4)
+  //   }, 3000)
+  //   return () => clearInterval(timer)
+  // })
   return (
     <div className="absolute -mt-16 w-full">
       <div className="max-w-7xl mx-auto px-6">
-        <ItemsCarousel
+        <div className="flex items-center h-32 p-4 w-full bg-white border-2 border-about-bg rounded-xl">
+          <img
+            className="w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
+            src="./assets/img/sponsors/woodson.webp"
+          />
+        </div>
+        {/* <ItemsCarousel
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
           numberOfCards={3}
@@ -31,7 +37,7 @@ function Sponsors() {
         >
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/amazon.webp"
+            src="./assets/img/sponsors/woodson.webp"
           />
           <img
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
@@ -53,7 +59,7 @@ function Sponsors() {
             className="md:w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
             src="./assets/img/sponsors/google.webp"
           />
-        </ItemsCarousel>
+        </ItemsCarousel> */}
       </div>
     </div>
   )
