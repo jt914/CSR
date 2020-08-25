@@ -22,7 +22,7 @@ function Sponsors() {
             />
             <source
               alt="W.T. Woodson Logo"
-              srcSet={require("../../../../public/assets/img/sponsors/woodson.webp")}
+              srcSet={require("../../../../public/assets/img/sponsors/woodson.png")}
               type="image/png"
             />
             <img
