@@ -33,11 +33,18 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <Head>
         <title>W.T. Woodson Cybersecurity and Robotics</title>
-        <meta name="title" content="W.T. Woodson Cybersecurity and Robotics" />
         <meta
-          name="description"
+          name="og:title"
+          content="W.T. Woodson Cybersecurity and Robotics"
+        />
+        <meta
+          name="og:description"
           content="Our Cybersecurity and Robotics program provide students with unique STEM opportunities and experience to educate and help students explore the different fields of STEM through competitions and other activities."
         />
+        <meta
+          property="og:image"
+          content="https://wtw.dev/assets/img/thumbnail.jpg"
+        ></meta>
 
         <link
           rel="apple-touch-icon"
