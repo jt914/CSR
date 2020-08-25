@@ -59,7 +59,7 @@ export default function Join() {
         className="hidden lg:block lg:w-2/5 xl:w-3/5 bg-cover bg-center"
         style={{
           backgroundImage: `url(
-            ${require("../../../public/assets/img/join/img.webp")}
+            ${require("../../../public/assets/img/join/img.jpg?webp")}
           )`,
         }}
       />

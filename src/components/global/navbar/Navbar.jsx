@@ -51,11 +51,19 @@ const Navbar = ({ links }) => {
             <Link href="/">
               <a>
                 <picture className="w-16">
-                  <source srcSet="/assets/img/logo.webp" type="image/webp" />
-                  <source srcSet="/assets/img/logo.png" type="image/png" />
-                  <img
-                    src="/assets/img/logo.webp"
+                  <source
                     className="w-16"
+                    srcSet="/assets/img/logo.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    className="w-16"
+                    srcSet="/assets/img/logo.png"
+                    type="image/png"
+                  />
+                  <img
+                    className="w-16"
+                    src="/assets/img/logo.png"
                     alt="W.T. Woodson CyberSecurity and Robotics"
                   />
                 </picture>
