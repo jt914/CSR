@@ -1,6 +1,4 @@
 import "../stylesheets/tailwind.css"
-// FOR PRODUCTION
-//import "../stylesheets/tailwind.generated.css"
 import "@brainhubeu/react-carousel/lib/style.css"
 import React from "react"
 

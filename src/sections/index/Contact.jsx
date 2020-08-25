@@ -19,7 +19,7 @@ const Membership = () => {
           <div
             className="flex-1 bg-cover bg-center relative"
             style={{
-              backgroundImage: `url(${require("../../../public/assets/img/contact/woodson.webp")})`,
+              backgroundImage: `url(${require("../../../public/assets/img/contact/woodson.jpg")})`,
             }}
           >
             <img

@@ -19,6 +19,9 @@ const Membership = () => {
               backgroundImage: `url(
                 ${require("../../../public/assets/img/membership/membership.jpg?webp")}
               )`,
+              backgroundImage: `url(
+                ${require("../../../public/assets/img/membership/membership.jpg")}
+              )`,
             }}
           >
             <img
