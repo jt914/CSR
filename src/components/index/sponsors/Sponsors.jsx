@@ -14,10 +14,22 @@ function Sponsors() {
     <div className="absolute -mt-16 w-full">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center h-32 p-4 w-full bg-white border-2 border-about-bg rounded-xl">
-          <img
-            className="w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none"
-            src="./assets/img/sponsors/woodson.webp"
-          />
+          <picture className="w-32 mx-auto my-auto filter-grayscale transition-all duration-100 ease-in hover:filter-none">
+            <source
+              alt="W.T. Woodson Logo"
+              srcSet={require("../../../../public/assets/img/sponsors/woodson.webp")}
+              type="image/webp"
+            />
+            <source
+              alt="W.T. Woodson Logo"
+              srcSet={require("../../../../public/assets/img/sponsors/woodson.webp")}
+              type="image/png"
+            />
+            <img
+              alt="W.T. Woodson Logo"
+              src="./assets/img/sponsors/woodson.webp"
+            />
+          </picture>
         </div>
         {/* <ItemsCarousel
           requestToChangeActive={setActiveItemIndex}
