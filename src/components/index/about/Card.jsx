@@ -7,7 +7,7 @@ function Card(props) {
   const { direction, category, title, description, color, link, image } = props
 
   const divPath = {
-    backgroundImage: `url('./assets/img/cards/${image}.jpg?webp')`,
+    backgroundImage: `url('./assets/img/cards/${image}.jpg')`,
   }
   return (
     <div>
