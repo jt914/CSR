@@ -10,11 +10,19 @@ export default function Join() {
     <div className="flex min-h-screen">
       <Head>
         <title>W.T. Woodson Cybersecurity and Robotics</title>
-        <meta name="title" content="W.T. Woodson Cybersecurity and Robotics" />
         <meta
-          name="description"
+          name="og:title"
+          content="W.T. Woodson Cybersecurity and Robotics"
+        />
+        <meta
+          name="og:description"
           content="Our Cybersecurity and Robotics program provide students with unique STEM opportunities and experience to educate and help students explore the different fields of STEM through competitions and other activities."
         />
+        <meta
+          property="og:image"
+          content="https://wtw.dev/assets/img/thumbnail.jpg"
+        ></meta>
+        <meta name="theme-color" content="#5b7cff" />
 
         <link
           rel="apple-touch-icon"

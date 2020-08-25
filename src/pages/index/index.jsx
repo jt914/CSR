@@ -45,6 +45,7 @@ export default function Home() {
           property="og:image"
           content="https://wtw.dev/assets/img/thumbnail.jpg"
         ></meta>
+        <meta name="theme-color" content="#5b7cff" />
 
         <link
           rel="apple-touch-icon"
