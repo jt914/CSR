@@ -1,15 +1,16 @@
 import axios from "axios"
+import { NextApiRequest, NextApiResponse } from "next"
 
-export default async (req, res) => {
-  const { email } = req.body
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  const { email }: { email: string } = req.body
 
   try {
-    const LIST_ID = process.env.MAILCHIMP_LIST_ID
-    const API_KEY = process.env.MAILCHIMP_API_KEY
+    const LIST_ID: string = process.env.MAILCHIMP_LIST_ID
+    const API_KEY: string = process.env.MAILCHIMP_API_KEY
 
-    const DATACENTER = API_KEY.split("-")[1]
+    const DATACENTER: string = API_KEY.split("-")[1]
 
-    const response = await axios.get(
+    await axios.get(
       `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members/${email}`,
       {
         headers: {

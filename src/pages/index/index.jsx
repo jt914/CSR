@@ -15,6 +15,7 @@ export default function Home() {
   const scrollToTop = () => {
     scroll.scrollToTop()
   }
+
   const [scrolled, setScroll] = useState(null)
   useEffect(() => {
     const onScroll = () => {
@@ -28,7 +29,8 @@ export default function Home() {
     return () => {
       document.removeEventListener("scroll", onScroll)
     }
-  }, [scroll])
+  }, [scrolled])
+
   return (
     <div className="overflow-x-hidden">
       <Head>
