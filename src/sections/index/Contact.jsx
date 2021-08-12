@@ -3,9 +3,6 @@ import React from "react"
 import Card from "../../components/index/contact/Card"
 
 const Membership = () => {
-  // const imgPath = {
-  //   backgroundImage: `url('/assets/img/contact/woodson.webp')`,
-  // }
   return (
     <div>
       <div className="bg-about-bg">

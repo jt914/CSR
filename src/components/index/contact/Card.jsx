@@ -1,7 +1,6 @@
 import React from "react"
-import ButtonLink from "../../global/button/ButtonLink"
 
-const Card = ({ category, title }) => {
+const Card = () => {
   return (
     <div className="">
       <h2 className="text-contact font-bold text-sm md:text-base uppercase tracking-widest">
@@ -15,18 +14,18 @@ const Card = ({ category, title }) => {
           </h3>
           <a
             className="text-paragraph text-base ease-in duration-100 transition-colors hover:text-primary"
-            href="mailto:contact@wtw.dev"
+            href="mailto:contact@wtwcsr.org"
           >
-            contact@wtw.dev
+            contact@wtwcsr.org
           </a>
         </div>
         <div className="pb-6 md:pb-0">
           <h3 className="text-gray-800 text-lg font-medium">Sponsorships</h3>
           <a
             className="text-paragraph text-base ease-in duration-100 transition-colors hover:text-primary"
-            href="mailto:finance@wtw.dev"
+            href="mailto:frc@wtwcsr.org"
           >
-            finance@wtw.dev
+            frc@wtwcsr.org
           </a>
         </div>
         <div className="pb-6 md:pb-0">
@@ -35,9 +34,9 @@ const Card = ({ category, title }) => {
           </h3>
           <a
             className="text-paragraph text-base ease-in duration-100 transition-colors hover:text-primary"
-            href="mailto:frc@wtw.dev"
+            href="mailto:frc@wtwcsr.org"
           >
-            frc@wtw.dev
+            frc@wtwcsr.org
           </a>
         </div>
         <div className="pb-6 md:pb-0">
@@ -46,9 +45,9 @@ const Card = ({ category, title }) => {
           </h3>
           <a
             className="text-paragraph text-base ease-in duration-100 transition-colors hover:text-primary"
-            href="mailto:cyberpatriot@wtw.dev"
+            href="mailto:cyberpatriot@wtwcsr.org"
           >
-            cyberpatriot@wtw.dev
+            cyberpatriot@wtwcsr.org
           </a>
         </div>
         <div className="col-span-2">
