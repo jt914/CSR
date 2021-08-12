@@ -50,7 +50,7 @@ const Pricing = () => {
                   ]}
                 />
                 <div className="p-6 mt-auto w-full">
-                  <Button onclick={handleClose} price="500" />
+                  <Button onclick={handleClose} price="250" />
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@ const Pricing = () => {
                 />
 
                 <div className="p-6 mt-auto w-full">
-                  <Button onclick={handleClose} price="2,500" />
+                  <Button onclick={handleClose} price="500" />
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Pricing = () => {
                   ]}
                 />
                 <div className="p-6 mt-auto w-full">
-                  <Button onclick={handleClose} price="5,000" />
+                  <Button onclick={handleClose} price="2,000" />
                 </div>
               </div>
             </div>
