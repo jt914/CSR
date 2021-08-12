@@ -5,7 +5,7 @@ const Card = ({ price, features }) => {
     <div className="">
       <div className="p-6 rounded-md text-left">
         <div className="flex items-baseline">
-          <p className="self-start text-lg text-pricing-subtext pt-2">$</p>
+          <p className="self-start text-lg text-pricing-subtext pr-1">$</p>
           <p className="text-white font-medium text-3xl md:text-4xl pr-2">
             {price}
           </p>

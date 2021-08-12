@@ -11,7 +11,7 @@ function About() {
         <div className="mx-auto max-w-7xl px-4 pt-40 pb-24 text-center">
           <h2
             id="programs"
-            className="text-pink-500 font-bold text-sm md:text-base uppercase"
+            className="text-pink-500 font-bold text-sm md:text-base uppercase tracking-widest"
           >
             Mission
           </h2>

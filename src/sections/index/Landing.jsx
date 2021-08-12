@@ -2,6 +2,7 @@ import React from "react"
 
 import ButtonLink from "../../components/global/button/ButtonLink"
 import TextLink from "../../components/global/button/TextLink"
+//import { Image } from "../../components/global/image/Image"
 
 const Landing = () => {
   return (
@@ -31,21 +32,44 @@ const Landing = () => {
             />
           </div>
         </div>
-        <div className="hidden md:block md:w-1/2">
+        <div id="image-container" className="hidden md:block md:w-1/2">
           <picture className="absolute top-0 right-0 w-2/5">
-            <source
+            {/* <source
               srcSet={require("../../../public/assets/img/Members.webp")}
               type="image/webp"
             />
             <source
               srcSet={require("../../../public/assets/img/Members.png")}
               type="image/png"
+            /> */}
+            <img
+              alt="Members"
+              className="blur-image"
+              src={require("../../../public/assets/img/Members.png?lqip")}
+              type="image/png"
             />
             <img
-              src={require("../../../public/assets/img/Members.png")}
+              alt="Members"
+              src={require("../../../public/assets/img/Members.png?webp")}
               type="image/png"
             />
           </picture>
+          <style jsx>{`
+        .image-container: {
+          position: relative;
+        }
+        .blur-image img {
+          blur(25px);
+          width: 300px;
+          height: 200px;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+    `}</style>
         </div>
       </div>
     </div>

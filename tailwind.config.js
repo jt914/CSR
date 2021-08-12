@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    content: ["./src/**/*.jsx"],
+    content: ["./src/**/*.jsx", "./src/**/*.tsx"],
   },
   theme: {
     filter: {
@@ -34,7 +34,7 @@ module.exports = {
         "footer-border": "#482e62",
         footer: "#341751",
         "navbar-border": "#0000001A",
-        "modal-background": "rgba(0,0,0,0.4);",
+        "modal-background": "rgba(0,0,0,0.4)",
       },
       maxWidth: {
         "7xl": "84rem;",

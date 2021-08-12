@@ -4,7 +4,9 @@ import PropTypes from "prop-types"
 function Description({ category, title, description, color, link }) {
   return (
     <div>
-      <h2 className={`${color} font-bold text-sm md:text-base uppercase`}>
+      <h2
+        className={`${color} font-bold text-sm md:text-base uppercase tracking-widest`}
+      >
         {category}
       </h2>
       <a href={link} className="flex items-center text-black">

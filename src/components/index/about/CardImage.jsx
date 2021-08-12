@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-function Image({ image }) {
+import Image from "next/image"
+
+function CardImage({ image }) {
   return (
     <div>
       <img
@@ -15,4 +17,4 @@ function Image({ image }) {
 Image.propTypes = {
   image: PropTypes.string.isRequired,
 }
-export default Image
+export default CardImage

@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Description from "../about/Description"
-import Image from "../about/Image"
+// import Image from "../about/Image"
 
 function Card(props) {
   const { direction, category, title, description, color, link, image } = props
@@ -31,6 +31,7 @@ function Card(props) {
             style={divPath}
           >
             <img
+              alt=""
               className="absolute right-0 bottom-0 -mr-2 -mb-12"
               src="./assets/img/shapes/aboutzigzag.svg"
             />
@@ -47,6 +48,7 @@ function Card(props) {
             style={divPath}
           >
             <img
+              alt=""
               className="absolute left-0 bottom-0 -ml-10 -mb-4"
               src="./assets/img/shapes/aboutwavey.svg"
             />
