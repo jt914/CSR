@@ -1,6 +1,6 @@
 import React from "react"
 
-const Card = () => {
+const Card = ({ category, title }) => {
   return (
     <div className="">
       <h2 className="text-contact font-bold text-sm md:text-base uppercase tracking-widest">
