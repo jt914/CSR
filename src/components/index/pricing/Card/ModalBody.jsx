@@ -11,6 +11,8 @@ const ModalBody = () => {
         </span>{" "}
         in the memo. Mail the check to:{" "}
         <span className="font-medium">9525 Main St, Fairfax, VA 22031</span>.
+<br />
+        For online donations, please visit <a href="https://gofund.me/972d6002" target="_blank" className="text-primary ease-in duration-100 transition-colors font-medium">https://gofund.me/972d6002</a>.
         All donations are fully tax-deductible.
       </p>
       <div className="w-full h-4" />
@@ -18,10 +20,10 @@ const ModalBody = () => {
         For recurring donations, material donations, or any other inquiries,
         please reach out to us at
         <a
-          href="mailto:finance@wtw.dev"
+          href="mailto:csr@wtwcsr.org"
           className="ml-1 hover:text-primary ease-in duration-100 transition-colors font-medium"
         >
-          finance@wtw.dev
+          csr@wtwcsr.org
         </a>
         .
       </p>
