@@ -109,7 +109,13 @@ const Navbar = ({ links }) => {
               Join the Club
             </button>
           </Link>
-        )}
+        ) &&
+          <Link href="/hackathon">
+            <button className="bg-secondary text-white bg-darken ease-in duration-100 rounded-md px-3 py-2">
+              Learn about the hackathon
+            </button>
+          </Link>
+        }
       </div>
     </div>
   )
