@@ -20,10 +20,10 @@ const ModalBody = () => {
         For recurring donations, material donations, or any other inquiries,
         please reach out to us at
         <a
-          href="mailto:frc@wtwcsr.org"
+          href="mailto:csr@wtwcsr.org"
           className="ml-1 hover:text-primary ease-in duration-100 transition-colors font-medium"
         >
-          frc@wtwcsr.org
+          csr@wtwcsr.org
         </a>
         .
       </p>
