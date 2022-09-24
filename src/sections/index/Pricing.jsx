@@ -33,8 +33,12 @@ const Pricing = () => {
             <p className="text-pricing-paragraph text-base max-w-lg mx-auto leading-relaxed pt-2">
               Consider donating to help support our mission to provide STEM
               opportunities to all students at Woodson. All cash donations are
-              tax exempt.
+              tax exempt. 
+              <a
+              className = 'text-white ease-in duration-100 ' 
+              target = "_blank" href = "assets/img/SP.pdf"> View our sponsorship packet.</a>
             </p>
+            
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-8">
             <div className="flex flex-col transform hover:scale-105 transition-transform ease-in duration-100">
