@@ -12,7 +12,7 @@ const ModalBody = () => {
         in the memo. Mail the check to:{" "}
         <span className="font-medium">9525 Main St, Fairfax, VA 22031</span>.
 <br />
-        For online donations, go to <a href="https://gofund.me/972d6002" target="_blank" className="text-primary ease-in duration-100 transition-colors font-medium">https://gofund.me/972d6002</a>.
+        For online donations, go to <a href="https://gofund.me/4f530ec7" target="_blank" className="text-primary ease-in duration-100 transition-colors font-medium">https://gofund.me/4f530ec7</a>.
         All donations are fully tax-deductible.
       </p>
       <div className="w-full h-4" />
