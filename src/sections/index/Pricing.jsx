@@ -36,7 +36,7 @@ const Pricing = () => {
               tax exempt. 
               <a
               className = 'text-white ease-in duration-100 ' 
-              target = "_blank" href = "public/assets/img/SP.pdf"> More information here.</a>
+              target = "_blank" href = "assets/img/SP.pdf"> More information here.</a>
             </p>
             
           </div>
