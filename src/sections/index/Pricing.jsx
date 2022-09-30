@@ -35,8 +35,13 @@ const Pricing = () => {
               opportunities to all students at Woodson. All cash donations are
               tax exempt. 
               <a
-              className = 'text-white ease-in duration-100 ' 
-              target = "_blank" href = "sp.pdf"> View our sponsorship packet.</a>
+              className = 'text-white	ease-in duration-200 transform hover:text-pricing-btn transition-transform'
+              target = "_blank" href = "sp.pdf"> More about us.</a>
+              <br/>
+              <br/>
+              <a
+              className = 'text-white	ease-in duration-200 transform hover:text-pricing-btn transition-transform'
+              target = "_blank" href = "\assets\img\senatorLetter.jpg"> View our recognition by US Senator Mark Warner</a>
             </p>
             
           </div>
