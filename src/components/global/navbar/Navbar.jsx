@@ -104,7 +104,7 @@ const Navbar = ({ links }) => {
           )}
         </div>
         {(width > 768 || isActive) && (
-          <Link href="/join">
+          <Link href="https://forms.gle/Vd49MrsfH7mdvsYN6">
             <button className="bg-secondary text-white bg-darken ease-in duration-100 rounded-md px-3 py-2">
               Join the Club
             </button>
