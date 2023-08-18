@@ -21,7 +21,7 @@ const Landing = () => {
           <div className="flex items-center">
             <ButtonLink
               text="Join the Club"
-              link="join"
+              link="https://forms.gle/Vd49MrsfH7mdvsYN6"
               type="link"
               color="bg-primary"
             />
