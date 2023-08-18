@@ -19,12 +19,11 @@ const Landing = () => {
             activities.
           </p>
           <div className="flex items-center">
-            <ButtonLink
-              text="Join the Club"
-              link="https://forms.gle/Vd49MrsfH7mdvsYN6"
-              type="link"
-              color="bg-primary"
-            />
+          <Link href="https://forms.gle/Vd49MrsfH7mdvsYN6">
+            <button className="bg-primary text-white bg-darken ease-in duration-100 rounded-md px-3 py-2">
+              Join the Club
+            </button>
+          </Link>
             <TextLink
               text="Become a Sponsor"
               link="sponsorships"
